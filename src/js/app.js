@@ -1,6 +1,9 @@
 import '/styles/app.styl'
-import '/js/api/api.js'
 import '/js/local-storage/local-storage.js'
 import '/js/user-interface/user-interface.js'
+//import { Api } from '/js/api/api.js'
+import '/js/router.js'
 
-console.log('app inited')
+
+//const api = new Api();
+//console.log(api.getByTitle('Men in Black'));
