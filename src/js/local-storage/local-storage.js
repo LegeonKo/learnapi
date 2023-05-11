@@ -1,0 +1,1 @@
+console.log('Local Storage inited')
