@@ -4,11 +4,9 @@ export class DetailPage {
     
 
     constructor(id) {
-        
-        
+
         console.log(
             api.getDetails(id)
-            
         );
         
     }
