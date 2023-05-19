@@ -1,14 +1,55 @@
+.go-back
+  align-self flex-end;
+  cursor pointer;
+  border none;
+
+.film_details
+  width 200px;
+
+
+.go-back, .film_details
+  padding 10px 30px;
+  border-radius 10px;
+  background #d5d5d5;
+  text-decoration none;
+  color black;
+  transition background .2s;
+  font-size 20px;
+  text-align center;
+
+  &:hover
+    background #ececec;
+    transition background .2s;
+
 .film_wrap
+  height: 500px;
+  font-size 32px;
   display flex;
   background linear-gradient(#fcc4c4, #ffc7ab);
   margin 10px;
   border-radius 10px;
-  height: 500px;
-  
+
+.film_wrap, .details_wrap
+
   .content_wrap
     display: flex;
     gap 20px;
     margin 10px;
+
+    .bookmark_wrap
+      margin-top 15px;
+
+      .new_checkbox
+        background-image url("/assets/img/bookmark-plus.svg");
+        width 40px;
+        height 40px;
+        background-size 40px;
+
+      .custom_checkbox
+        display none;
+
+        &:checked + .new_checkbox
+          background-image url("/assets/img/bookmark-minus.svg");
 
     .img_wrap
       background gainsboro;
@@ -24,13 +65,42 @@
         border-radius 10px;
   
     .text_wrap
-      display flex;
+      display: flex;
       flex-direction column;
-      gap 20px;
-      margin-top 20px;
-      font-weight 800;
-      font-size 32px;
+      gap: 10px;
+      justify-content space-between;
   
       .movie_title
         font-size 48px;
+        font-weight 800;
 
+.details_wrap
+  font-size 24px;
+  height 100%;
+  display flex;
+  flex-direction column;
+
+  .content_wrap
+    gap 50px;
+    align-items flex-start
+    margin-left 50px;
+
+    .text_wrap
+      gap: 5px;
+      margin 0;
+      font-size 20px;
+
+    .img_wrap
+      height 480px;
+
+.not-found
+  display: flex
+  font-size 32px;
+  align-items center;
+  justify-content center;
+  text-align center
+  height 100px;
+  border-radius 10px;
+  background #e7e7e7;
+  margin 100px 150px 0;
+  padding 0 70px;

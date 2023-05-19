@@ -7,18 +7,23 @@
 </head>
 <body>
 <header>
-    <div>ЯDetail</div>
-    <input type="text">
+    <div>ЯMovie</div>
+    <form action="/" id="film_search">
+        <input type="text" id="text_window" name="s">
+        <button type="submit">Найти!</button>
+    </form>
 </header>
-<div class="content">
-    <a href="/">назад</a>
-
-    <div id="movie-details">
-        <img id="movie-img" src="" alt="">
-        <div id="description"></div>
+<div class="content_block">
+    <div class="details_content">
     </div>
-
 </div>
+<footer>
+    <div class="footer_content__wrap">
+        <div class="footer_content__logo">ЯMovie</div>
+        <div class="footer_content__descritpion">Все права незащищены.</div>
+        <div>Весь контент украден.</div>
+    </div>
+</footer>
 <script type="module" src="/js/app.js"></script>
 </body>
 </html>
